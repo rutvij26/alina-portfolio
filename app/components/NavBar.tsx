@@ -1,4 +1,5 @@
 import React from 'react'
+import { SocialIcon } from 'react-social-icons'
 
 const NavBar = () => {
     return (
@@ -7,9 +8,21 @@ const NavBar = () => {
                 <span className='custom-text cursor-default'>Alina Velani</span>
             </div>
             <div className="about-work-skills flex justfiy-center items-center">
-                <span className='custom-text'>About</span>
-                <span className='custom-text'>Work</span>
-                <span className='custom-text'>Skills</span>
+                <div className="px-2">
+                    <SocialIcon
+                        url="https://www.linkedin.com/in/alina-velani-37b4b4180/"
+                    />
+                </div>
+                <div className="px-2">
+                    <SocialIcon
+                        url="https://www.instagram.com/alina_velani28/"
+                    />
+                </div>
+                <div className="px-2">
+                    <SocialIcon
+                        url="https://twitter.com/alina_velani28"
+                    />
+                </div>
             </div>
         </div>
     )

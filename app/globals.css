@@ -7,7 +7,7 @@
     @apply font-mono
   }
   .custom-text {
-    @apply text-text text-4xl px-4 uppercase global-font
+    @apply text-text text-4xl px-4 uppercase global-font border
     hover:text-hover cursor-pointer
   }
 }

@@ -14,7 +14,7 @@ const Hero = () => {
                 />
             </div>
             <div className="text-7xl uppercase global-font p-10">
-                <span className='text-text'>Creative Writer</span>
+                <span className='text-text tracking-widest'>CopyWriter</span>
             </div>
             <div className="">
                 <span className='custom-text'>About</span>
