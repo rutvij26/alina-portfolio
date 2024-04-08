@@ -11,7 +11,16 @@
     hover:text-hover cursor-pointer
   }
   .global-section {
-    @apply flex h-screen  mt-28
+    @apply flex h-screen mt-28
+  }
+  .about-para {
+    @apply text-text md:text-sm xl:text-lg global-font text-justify
+    hover:text-hover hover:cursor-default
+
+  }
+  .about-div {
+    @apply border-text border-2 text-center max-w-[35%] mt-24 p-10
+    hover:border-hover hover:cursor-default
   }
 }
 
