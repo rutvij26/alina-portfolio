@@ -10,7 +10,7 @@ const About = () => {
             </div>
             <div className="about-div">
                 <p className='about-para'>
-                    A creative thinker and visual storyteller who believes in transforming ideas into impactful content across various mediums. From catchy taglines to engaging website copy, I bring a unique blend of creativity and strategic thinking to every project. My 2+ years of experience have equipped me with the skills to collaborate effectively with marketing teams, designers, and clients to ensure that the creative vision aligns seamlessly with strategic objectives. Whether you're looking to enhance your brand's voice, boost your online presence, or drive conversions, I'm here to help you craft copy that resonates and delivers tangible results. Let's collaborate to elevate your brand's story and leave a lasting impression on your audience.
+                    A creative thinker and visual storyteller who believes in transforming ideas into impactful content across various mediums. From catchy taglines to engaging website copy, I bring a unique blend of creativity and strategic thinking to every project. My 2+ years of experience have equipped me with the skills to collaborate effectively with marketing teams, designers, and clients to ensure that the creative vision aligns seamlessly with strategic objectives. Whether you&apos;re looking to enhance your brand&apos;s voice, boost your online presence, or drive conversions, I&apos;m here to help you craft copy that resonates and delivers tangible results. Let&apos;s collaborate to elevate your brand&apos;s story and leave a lasting impression on your audience.
                 </p>
             </div>
         </div>
