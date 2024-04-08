@@ -1,9 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Hero = () => {
     return (
-        <div className='text-primary flex flex-col h-screen items-center mt-10'>
+        <div className='global-section flex-col items-center'>
             <div className="p-10">
                 <Image
                     src="/Headshot-square-cropped.JPG"
@@ -14,12 +15,18 @@ const Hero = () => {
                 />
             </div>
             <div className="text-7xl uppercase global-font p-10">
-                <span className='text-text tracking-widest'>CopyWriter</span>
+                <span className='text-text tracking-widest global-font'>CopyWriter</span>
             </div>
             <div className="">
-                <span className='custom-text'>About</span>
-                <span className='custom-text'>Work</span>
-                <span className='custom-text'>Skills</span>
+                <Link href="#about">
+                    <span className='custom-text'>About</span>
+                </Link>
+                <Link href="#about">
+                    <span className='custom-text'>Work</span>
+                </Link>
+                <Link href="#about">
+                    <span className='custom-text'>Skills</span>
+                </Link>
             </div>
         </div>
     )

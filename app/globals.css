@@ -10,6 +10,9 @@
     @apply text-text text-4xl px-4 uppercase global-font border
     hover:text-hover cursor-pointer
   }
+  .global-section {
+    @apply flex h-screen  mt-28
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -22,8 +25,21 @@
   }
  }
 
- 
+:root {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+ }
 
 body {
   background-color: #191919;
+
  }
