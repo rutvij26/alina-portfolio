@@ -18,7 +18,7 @@ const Hero = () => {
                 />
             </div>
             <div className="p-10">
-                <span className='global-font text-xl md:text-2xl xl:text-4xl uppercase global-font text-text tracking-widest '>CopyWriter</span>
+                <span className='global-font text-2xl md:text-3xl xl:text-4xl uppercase global-font text-text tracking-widest '>CopyWriter</span>
             </div>
             <div className="flex flex-col justify-center items-center md:flex-row">
                 <Link className='pt-4' href="#about">
