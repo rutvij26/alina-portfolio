@@ -11,16 +11,29 @@ const NavBar = () => {
                 <div className="px-2">
                     <SocialIcon
                         url="https://www.linkedin.com/in/alina-velani-37b4b4180/"
+                        bgColor='#463239'
+                        fgColor='#ffc09f'
                     />
                 </div>
                 <div className="px-2">
                     <SocialIcon
                         url="https://www.instagram.com/alina_velani28/"
+                        bgColor='#463239'
+                        fgColor='#ffc09f'
                     />
                 </div>
                 <div className="px-2">
                     <SocialIcon
                         url="https://twitter.com/alina_velani28"
+                        bgColor='#463239'
+                        fgColor='#ffc09f'
+                    />
+                </div>
+                <div className="px-2">
+                    <SocialIcon
+                        url="mailto:alinavelani99@gmail.com"
+                        bgColor='#463239'
+                        fgColor='#ffc09f'
                     />
                 </div>
             </div>
