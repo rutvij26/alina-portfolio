@@ -33,6 +33,9 @@
     justify-items: center;
     align-items: center;
   }
+  .navbar-heading {
+    justify-content: center;
+  }
  }
 
  .rounded-full {
