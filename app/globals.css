@@ -11,7 +11,7 @@
     hover:text-hover cursor-pointer
   }
   .global-section {
-    @apply flex h-screen mt-28
+    @apply flex h-screen mt-20 lg:mt-20
   }
   .about-para {
     @apply text-text md:text-sm xl:text-lg global-font text-justify
@@ -22,6 +22,7 @@
     @apply border-text border-2 text-center max-w-[35%] mt-24 p-10
     hover:border-hover hover:cursor-default
   }
+  
 }
 
 @media screen and (max-width: 640px) {
@@ -34,11 +35,16 @@
   }
  }
 
+ .rounded-full {
+  border-radius: 50%; /* Makes the image fully rounded */
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+}
+
 :root {
   .scrollbar-hide {
     -ms-overflow-style: none;
     scrollbar-width: none;
-}
+  }
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }
@@ -46,9 +52,9 @@
 
 ::-webkit-scrollbar {
   display: none;
- }
+}
 
 body {
   background-color: #191919;
 
- }
+}

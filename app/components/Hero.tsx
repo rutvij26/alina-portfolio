@@ -11,20 +11,23 @@ const Hero = () => {
                     width={500}
                     height={500}
                     alt='Alina Photo'
-                    className="rounded-full"
+                    className="rounded-full 
+                    h-40 md:h-[20rem] 
+                    w-40 md:w-[20rem] 
+                    object-cover"
                 />
             </div>
-            <div className="text-7xl uppercase global-font p-10">
-                <span className='text-text tracking-widest global-font'>CopyWriter</span>
+            <div className="p-10">
+                <span className='global-font text-xl md:text-2xl xl:text-4xl uppercase global-font text-text tracking-widest '>CopyWriter</span>
             </div>
-            <div className="">
-                <Link href="#about">
+            <div className="flex flex-col justify-center items-center md:flex-row">
+                <Link className='pt-4' href="#about">
                     <span className='custom-text'>About</span>
                 </Link>
-                <Link href="#about">
+                <Link className='pt-4' href="#work">
                     <span className='custom-text'>Work</span>
                 </Link>
-                <Link href="#about">
+                <Link className='pt-4' href="#skills">
                     <span className='custom-text'>Skills</span>
                 </Link>
             </div>
