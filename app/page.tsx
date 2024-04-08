@@ -12,9 +12,9 @@ export default function Home() {
         <section id="Hero" className="flex flex-1 min-h-screen snap-start scrollbar-hide">
           <Hero />
         </section>
-        {/* <section id="about" className="flex flex-1 min-h-screen snap-center scrollbar-hide">
+        <section id="about" className="flex flex-1 min-h-screen snap-center scrollbar-hide">
           <About />
-        </section> */}
+        </section>
       </main>
     </div >
   );

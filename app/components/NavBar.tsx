@@ -4,7 +4,7 @@ import { socials } from '../data/socials'
 
 const NavBar = () => {
     return (
-        <div className='h-20 flex w-screen pt-4 px-4 '>
+        <div className='h-20 flex max-h-screen w-screen pt-4 px-4 '>
             <div className="flex flex-1 alina-container navbar-heading items-center">
                 <span className='custom-text cursor-default tracking-widest'>Alina Velani</span>
             </div>

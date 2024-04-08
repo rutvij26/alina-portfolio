@@ -2,9 +2,9 @@ import React from 'react'
 
 const About = () => {
     return (
-        <div className='global-section mt-0 flex flex-col items-center justify-center'>
+        <div className='global-section mt-3 flex flex-col items-center justify-center'>
             <div className="text-center hover:cursor-default">
-                <span className='text-text text-5xl italic global-font  '>
+                <span className='text-text text-lg md:text-2xl xl:text-4xl italic global-font  '>
                     I write in Rhymes.. or not Sometimes...
                 </span>
             </div>
