@@ -1,6 +1,7 @@
 import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Work from "./components/Work";
 
 export default function Home() {
   return (
@@ -14,6 +15,9 @@ export default function Home() {
         </section>
         <section id="about" className="flex flex-1 min-h-screen snap-center scrollbar-hide">
           <About />
+        </section>
+        <section id="work" className="flex flex-1 min-h-screen snap-center scrollbar-hide">
+          <Work />
         </section>
       </main>
     </div >
