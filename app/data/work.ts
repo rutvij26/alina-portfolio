@@ -7,7 +7,7 @@ export interface IExperiences {
         points?: string[];
     }
 }
-
+// alina edit
 export const experiences: IExperiences = {
     "1": {
         name: "North Strategic",
@@ -32,7 +32,7 @@ export const experiences: IExperiences = {
     "2": {
         name: "North Strategic 2",
         photo_url: "/publicis_square.png",
-        title: "Experience Title 2"
+        title: "Experience Title 2",   
     },
     "3": {
         name: "North Strategic 3",
