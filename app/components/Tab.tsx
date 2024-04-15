@@ -9,11 +9,10 @@ interface ITabProps {
 
 const tabStyleClass = (activePane: string, tabName: TTab) => `
         flex justify-center items-center h-[5vh] w-[20vw] 
-        rounded-l-lg border-x-2 border-t-2 border-text text-text 
+        border-x-2 border-t-2 border-text text-text 
         hover:cursor-pointer 
-        ${activePane === tabName ? 'bg-secondary text-background' : ''}
+        ${activePane === tabName ? 'bg-hover-200 text-black-900' : ''}
         `
-// hover:bg-hover hover:text-background 
 
 const Tab = ({
     setActivePane,

@@ -12,7 +12,10 @@ const config: Config = {
       primary: "#ffee93",
       secondary: "#adf7b6",
       background: "#463239",
-      hover: "#ed6b86"
+      hover: "#ed6b86",
+      'hover-200': "#ee7992",
+      'hover-100': "#f0889e",
+      'black-900': "#000",
     },
     // extend: {
     //   backgroundImage: {

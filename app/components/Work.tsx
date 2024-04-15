@@ -15,7 +15,7 @@ const dataPaneMap: Record<TTab, IExperiences | IProjects> = {
 type TDataKey = keyof IExperiences | keyof IProjects
 
 const SideItemClass = (exp: TDataKey, key: TDataKey) => `
-    flex justify-center items-center flex-[0.1] border-b-2 border-text hover:cursor-pointer ${exp === key ? 'bg-primary' : ''}
+    flex justify-center items-center flex-[0.1] border-b-2 border-text hover:cursor-pointer ${exp === key ? 'bg-hover' : ''}
 `
 
 const Work = () => {
@@ -35,7 +35,7 @@ const Work = () => {
             {/* Canvas */}
             <div className="flex h-[65vh] md:h-[70vh] w-[80vw] border-2 border-text">
                 {/* SideBar */}
-                <div className="flex flex-[0.25] flex-col  border-r-2 border-text">
+                <div className="flex flex-[0.10] flex-col  border-r-2 border-text">
                     {/* Item */}
                     {
                         Object.entries(data).map(([key, experience]) => (
@@ -52,17 +52,61 @@ const Work = () => {
                                             className="rounded-full object-cover"
                                         />
                                     </div>
-                                    <div className="flex p-2">
+                                    {/* <div className="flex p-2">
                                         <span className={`text-[0.5rem] global-font md:text-lg ${exp === key ? 'text-background' : 'text-text'} `}>{experience.name}</span>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         ))
                     }
                 </div>
                 {/* Render Pane */}
-                <div className="flex flex-[0.75] border-text justify-center p-2">
-                    <span className='global-font text-text text-4xl'>{data[exp].title}</span>
+                <div className=" flex  flex-col flex-[0.90] border-text  p-4">
+                    <div className="flex  justify-between">
+                        <div className="flex">
+                            <span className='custom-text cursor-default text-2xl'>{data[exp].name}</span>
+                        </div>
+                        <div className="flex">
+                            <span className='custom-text cursor-default text-2xl'>{data[exp].title}</span>
+                        </div>
+                    </div>
+                    <div className="flex flex-1 justify-between flex-col py-2 items-center">
+                        <div className="py-2 flex justify-center">
+                            <span className='global-font custom-text text-2xl text-bold text-text  uppercase  cursor-default'>
+                                Brands
+                            </span>
+                        </div>
+                        <div className="flex flex-row justify-center">
+                            {
+                                data[exp]?.brands?.map((brand, index) => (
+                                    <div key={index} className="p-2">
+                                        <Image
+                                            key={index}
+                                            src={brand}
+                                            alt='brand'
+                                            width={100}
+                                            height={100}
+                                            className='rounded-full'
+                                        />
+                                    </div>
+                                ))
+                            }
+                        </div>
+                        <div className="flex max-w-[70%] p-2 border border-text mt-4">
+                            <ul>
+                                {
+                                    data[exp]?.points?.map((point) => (
+                                        <li key={point}>
+                                            <span className="global-font text-text">
+                                                {" - "}{point}
+                                            </span>
+                                        </li>
+
+                                    ))
+                                }
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div >

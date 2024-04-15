@@ -3,6 +3,8 @@ export interface IProjects {
         name: string;
         photo_url: string;
         title: string;
+        brands?: string[];
+        points?: string[];
     }
 }
 

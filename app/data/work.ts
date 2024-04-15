@@ -3,14 +3,31 @@ export interface IExperiences {
         name: string;
         photo_url: string;
         title: string;
+        brands?: string[];
+        points?: string[];
     }
 }
 
 export const experiences: IExperiences = {
     "1": {
-        name: "North Strategic 1",
+        name: "North Strategic",
         photo_url: "/publicis_square.png",
-        title: "Experience Title 1"
+        brands: [
+            "/publicis_square.png",
+            "/publicis_square.png",
+            "/publicis_square.png",
+            "/publicis_square.png",
+            "/publicis_square.png",
+        ],
+        title: "Public Relations Intern",
+        points: [
+            "A creative thinker and visual storyteller who believes in transforming ideas into impactful content across various mediums.",
+            "A creative thinker and visual storyteller who believes in transforming ideas into impactful content across various mediums.",
+            "A creative thinker and visual storyteller who believes in transforming ideas into impactful content across various mediums.",
+            "A creative thinker and visual storyteller who believes in transforming ideas into impactful content across various mediums.",
+            "A creative thinker and visual storyteller who believes in transforming ideas into impactful content across various mediums.",
+            "A creative thinker and visual storyteller who believes in transforming ideas into impactful content across various mediums.",
+        ]
     },
     "2": {
         name: "North Strategic 2",
