@@ -5,6 +5,7 @@ import { IExperiences, experiences } from '../data/work'
 import { IProjects, projects } from '../data/projects'
 import TabBar, { TTab } from './TabBar'
 import Experience from './Experience'
+import Project from './Project'
 
 const dataPaneMap: Record<TTab, IExperiences | IProjects> = {
     'Experiences': experiences,
@@ -62,7 +63,7 @@ const Work = () => {
                 {
                     activePane === "Experiences" ?
                         <Experience data={data} exp={exp} />
-                        : <></>
+                        : <Project data={data} project={exp} />
                 }
             </div>
         </div >

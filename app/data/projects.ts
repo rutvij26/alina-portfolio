@@ -3,8 +3,9 @@ export interface IProjects {
         name: string;
         photo_url: string;
         title: string;
-        brands?: string[];
-        points?: string[];
+        idea?: string;
+        insight?: string;
+        images?: string[];
     }
 }
 
@@ -12,7 +13,15 @@ export const projects: IProjects = {
     "1": {
         name: "Project 1",
         photo_url: "/publicis_square.png",
-        title: "Project title 1"
+        title: "Project title 1",
+        idea: "IDEA",
+        insight: "INSIGHT",
+        images: [
+            "/publicis_square.png",
+            "/publicis_square.png",
+            "/publicis_square.png",
+        ]
+
     },
     "2": {
         name: "Project 2",

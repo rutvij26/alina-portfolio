@@ -4,7 +4,7 @@ import { IExperiences } from '../data/work'
 
 const Experience = ({ data, exp }: { data: IExperiences, exp: keyof IExperiences }) => {
     return (
-        <div className=" flex  flex-col flex-[0.90] border-text  p-4">
+        <div className=" flex flex-col flex-[0.90] border-text  p-4">
             <div className="flex  justify-between">
                 <div className="flex">
                     <span className='custom-text cursor-default text-2xl'>{data[exp].name}</span>

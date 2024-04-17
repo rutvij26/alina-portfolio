@@ -27,8 +27,8 @@ const Hero = () => {
                 <Link className='pt-4' href="#work">
                     <span className='custom-text'>Work</span>
                 </Link>
-                <Link className='pt-4' href="#skills">
-                    <span className='custom-text'>Skills</span>
+                <Link className='pt-4' href="#contact">
+                    <span className='custom-text'>Contact</span>
                 </Link>
             </div>
         </div>
