@@ -50,7 +50,7 @@ export const experiences: IExperiences = {
     "3": {
         name: "Togglehead",
         photo_url: "/TH.png",
-        title: "Experience Title 3",
+        title: "Junior Copywriter",
         points: [
             "Handled the social media of Gits band along with website building, prepared launch campaigns, social media weekly calendars with post content and captions .",
             "Preparing fun and interactive agency related content, promoting the brands and collaborations of our company through posts and videos.",
