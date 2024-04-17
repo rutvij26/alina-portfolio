@@ -59,9 +59,9 @@ export const experiences: IExperiences = {
             
         ],
         brands: [
-            "/gits.png",
+            "/Gits.png",
             "/dc.png",
-            "/yardley.png",
+            "/Yardley.png",
         ]
     },
     "4": {
