@@ -12,7 +12,7 @@ export interface IProjects {
 export const projects: IProjects = {
     "1": {
         name: "Paw Patrol",
-        photo_url: "/paw.png",
+        photo_url: "/projects/paw.png",
         title: "Paw Patrol",
         idea: "One show is all it takes to make you cool",
         insight: "87% of today's parents believe that having a friendship with their children is important",
