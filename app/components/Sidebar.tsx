@@ -18,7 +18,7 @@ const SideItemClass = (exp: TDataKey, key: TDataKey) => `
 
 const Sidebar = ({ data, setExp, exp }: SideBarProps) => {
     return (
-        <div className="flex flex-[0.20] md:flex-[0.10] flex-col  border-r-2 border-text">
+        <div className="flex flex-[0.20] lg:flex-[0.20] flex-col  border-r-2 border-text">
             {/* Item */}
             {
                 Object.entries(data).map(([key, experience]) => (

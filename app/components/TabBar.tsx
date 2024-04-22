@@ -18,7 +18,7 @@ const TabBar = ({
     activePane,
 }: ITabBarProps) => {
     return (
-        <div className="flex justify-left w-[80vw]">
+        <div className="flex md:justify-left min-w-full md:w-[80vw]">
             {
                 tabs.map((tab) => (
                     <Tab key={tab} setActivePane={setActivePane} activePane={activePane} tabName={tab} />

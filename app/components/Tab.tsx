@@ -8,9 +8,9 @@ interface ITabProps {
 }
 
 const tabStyleClass = (activePane: string, tabName: TTab) => `
-        flex justify-center items-center h-[5vh] w-[20vw] 
+        flex justify-center items-center min-h-[5vh] w-[50%] md:w-[20%] 
         border-x-2 border-t-2 border-text text-text 
-        hover:cursor-pointer 
+        hover:cursor-pointer uppercase 
         ${activePane === tabName ? 'bg-hover-200 text-black-900' : ''}
         `
 
@@ -21,7 +21,7 @@ const Tab = ({
 }: ITabProps) => {
     return (
         <div onClick={() => setActivePane(tabName)} className={tabStyleClass(activePane, tabName)}>
-            <span className=' text-[0.5rem] global-font md:text-lg'>{tabName}</span>
+            <span className='global-font text-lg'>{tabName}</span>
         </div>
     )
 }
