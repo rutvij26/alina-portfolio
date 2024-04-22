@@ -23,7 +23,7 @@ const Project = ({ data, project }: { data: IProjects, project: keyof IProjects 
                     </span>
                 </div>
             </div>
-            <div className="flex-[0.7] justify-center md:snap-y md:snap-mandatory overflow-y-scroll">
+            <div id="project" className="flex-[0.7] justify-center md:snap-y md:snap-mandatory overflow-y-scroll">
                 {data[project]?.images?.map((image, index) => (
                     <div
                         key={index}

@@ -19,7 +19,7 @@ const Experience = ({ data, exp }: { data: IExperiences, exp: keyof IExperiences
                         Brands
                     </span>
                 </div>
-                <div className="flex flex-row justify-center">
+                <div id="experience" className="flex flex-row justify-center">
                     {
                         data[exp]?.brands?.map((brand, index) => (
                             <div key={index} className="p-2">

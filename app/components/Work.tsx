@@ -26,6 +26,16 @@ const Work = () => {
         setExp("1")
     }, [activePane])
 
+    useEffect(() => {
+        const projects = document?.getElementById('project')
+        if (projects) {
+            projects.scrollTop = 0;
+        } 
+        const experience = document.getElementById('experience')
+        if (experience) {
+            experience.scrollTop = 0;
+        }
+    }, [exp])
 
     return (
         <div className='global-section mt-0 md:mt-8 flex-col items-center justify-center'>
