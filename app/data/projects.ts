@@ -93,7 +93,7 @@ export const projects: IProjects = {
         photo_url: "/projects/philly.png",
         title: "Philadelphia Cream Cheese",
         idea: "It's time for a creamy conversation #TweetsFromAnAngel",
-        insight: "The Philly Angel(icon and spokesperson of Philadelphia Cream Cheese) shares her views of the world from 3000 feet above earth, commenting on all things culture, cream cheese, breakfast, workplace, and more.",
+        insight: "The Philly Angel (icon and spokesperson of Philadelphia Cream Cheese) shares her views of the world from 3000 feet above earth, commenting on all things culture, cream cheese, breakfast, workplace, and more.",
         images: [
             "/projects/salad.png",
             "/projects/spreadsheet.png",
