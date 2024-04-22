@@ -11,7 +11,7 @@ const Project = ({ data, project }: { data: IProjects, project: keyof IProjects 
                         IDEA
                     </span>
                     <span className='global-font m-2 custom-text text-2xl text-bold text-text  uppercase  cursor-default'>
-                        Doing daily media monitoring and PR control for established global brands.
+                        {data[project].idea}
                     </span>
                 </div>
                 <div className="flex flex-col">
@@ -19,18 +19,24 @@ const Project = ({ data, project }: { data: IProjects, project: keyof IProjects 
                         INSIGHT
                     </span>
                     <span className='global-font m-2 custom-text text-2xl text-bold text-text  uppercase  cursor-default'>
-                        Doing daily media monitoring and PR control for established global brands.
+                        {data[project].insight}
                     </span>
                 </div>
             </div>
-            <div className="flex flex-col flex-[0.7] justify-center items-center overflow-y-scroll snap-y snap-mandatory">
-                <Image
-                    src="/amex.png"
-                    alt='brand'
-                    width={600}
-                    height={600}
-                    className='object-cover'
-                />
+            <div className="flex-[0.7] justify-center snap-y snap-mandatory overflow-y-scroll">
+                {data[project]?.images?.map((image, index) => (
+                    <div
+                        key={index}
+                        className="flex flex-1 h-full w-full justify-center items-center snap-center">
+                        <Image
+                            src={image}
+                            alt="project image"
+                            width={600}
+                            height={600}
+                            className='object-scale-down h-full w-full'
+                        />
+                    </div>
+                ))}
             </div>
         </div>
     )

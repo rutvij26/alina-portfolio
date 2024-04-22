@@ -19,17 +19,17 @@ export const projects: IProjects = {
         images: [
             "/projects/paw-cover.png",
             "/projects/paw-bill.png",
-            "/projetcs/paw-social.png",
+            "/projects/paw-social.png",
             "/projects/paw-indigo.png",
-            "/projetcs/paw-web.png",
+            "/projects/paw-web.png",
             "/projects/paw-book.png",
-            
+
         ]
 
     },
     "2": {
         name: "Heinz",
-        photo_url: "/projetcs/heinz.png",
+        photo_url: "/projects/heinz.png",
         title: "Heinz",
         idea: "No Sodium on the Podium",
         insight: "Salt is seen as a core part of gaming, but it doesn't have to be",
@@ -37,7 +37,7 @@ export const projects: IProjects = {
             "/projects/Heinz-cover.png",
             "/projects/execution-1.png",
             "/projects/execution-ooh.png",
-            "/proejcts/execution-2.png",
+            "/projects/execution-2.png",
             "/projects/execution-3.png",
             "/projects/execution-4.png",
             "/projects/execution-5.png",
@@ -51,11 +51,11 @@ export const projects: IProjects = {
         idea: "Built for the Better",
         insight: "Customers are seeking more economical EVs without sacrificing features in the EV industry",
         images: [
-            "/proejcts/toyota-cover.png",
+            "/projects/toyota-cover.png",
             "/projects/built.png",
-            "/proejcts/toyota-ooh1.png",
+            "/projects/toyota-ooh1.png",
             "/projects/toyota-ooh2.png",
-            "/proejcts/toyota-ooh.png",
+            "/projects/toyota-ooh.png",
             "/projects/toyota-sm.png",
         ]
     },
@@ -70,12 +70,12 @@ export const projects: IProjects = {
             "/projects/eatmore-ooh.png",
             "/projects/eatmore-sm.png",
             "/projects/eatmore-activation.png",
-            
+
         ]
     },
     "5": {
         name: "The Beer Store",
-        photo_url: "/projects/beerstore.png",
+        photo_url: "/projects/beer-store.png",
         title: "The Beer Store",
         idea: "Discover the world one pint at a time",
         insight: "30-40 year old's love to travel but cant due to life responsiblities.",
@@ -86,6 +86,6 @@ export const projects: IProjects = {
             "/projects/beer-points.png",
             "/projects/beer-passport.png",
         ]
-            
+
     },
 }
