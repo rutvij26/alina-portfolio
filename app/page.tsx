@@ -16,7 +16,7 @@ export default function Home() {
         <section id="about" className="flex flex-1 min-h-screen snap-center scrollbar-hide">
           <About />
         </section>
-        <section id="work" className="flex flex-1 min-h-screen snap-center scrollbar-hide">
+        <section id="work" className="flex flex-1 min-h-screen snap-end scrollbar-hide">
           <Work />
         </section>
       </main>
