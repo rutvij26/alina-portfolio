@@ -11,36 +11,81 @@ export interface IProjects {
 
 export const projects: IProjects = {
     "1": {
-        name: "Project 1",
-        photo_url: "/publicis_square.png",
-        title: "Project title 1",
-        idea: "IDEA",
-        insight: "INSIGHT",
+        name: "Paw Patrol",
+        photo_url: "/projects/paw.png",
+        title: "Paw Patrol",
+        idea: "One show is all it takes to make you cool",
+        insight: "87% of today's parents believe that having a friendship with their children is important",
         images: [
-            "/publicis_square.png",
-            "/publicis_square.png",
-            "/publicis_square.png",
+            "/projects/paw-cover.png",
+            "/projects/paw-bill.png",
+            "/projetcs/paw-social.png",
+            "/projects/paw-indigo.png",
+            "/projetcs/paw-web.png",
+            "/projects/paw-book.png",
+            
         ]
 
     },
     "2": {
-        name: "Project 2",
-        photo_url: "/publicis_square.png",
-        title: "Project title 2"
+        name: "Heinz",
+        photo_url: "/projetcs/heinz.png",
+        title: "Heinz",
+        idea: "No Sodium on the Podium",
+        insight: "Salt is seen as a core part of gaming, but it doesn't have to be",
+        images: [
+            "/projects/Heinz-cover.png",
+            "/projects/execution-1.png",
+            "/projects/execution-ooh.png",
+            "/proejcts/execution-2.png",
+            "/projects/execution-3.png",
+            "/projects/execution-4.png",
+            "/projects/execution-5.png",
+            "/projects/event.png",
+        ]
     },
     "3": {
-        name: "Project 3",
-        photo_url: "/publicis_square.png",
-        title: "Project title 3"
+        name: "Toyota",
+        photo_url: "/projects/toyota.png",
+        title: "Toyota",
+        idea: "Built for the Better",
+        insight: "Customers are seeking more economical EVs without sacrificing features in the EV industry",
+        images: [
+            "/proejcts/toyota-cover.png",
+            "/projects/built.png",
+            "/proejcts/toyota-ooh1.png",
+            "/projects/toyota-ooh2.png",
+            "/proejcts/toyota-ooh.png",
+            "/projects/toyota-sm.png",
+        ]
     },
     "4": {
-        name: "Project 4",
-        photo_url: "/publicis_square.png",
-        title: "Project title 4"
+        name: "Hershey's Eatmore",
+        photo_url: "/projects/eatmore.png",
+        title: "Hershey's Eatmore",
+        idea: "Just....chew on it",
+        insight: "Gen Z does not know Eat More exists. The product lacks awareness.",
+        images: [
+            "/projects/eatmore-cover.png",
+            "/projects/eatmore-ooh.png",
+            "/projects/eatmore-sm.png",
+            "/projects/eatmore-activation.png",
+            
+        ]
     },
     "5": {
-        name: "Project 5",
-        photo_url: "/publicis_square.png",
-        title: "Project title 5"
+        name: "The Beer Store",
+        photo_url: "/projects/beerstore.png",
+        title: "The Beer Store",
+        idea: "Discover the world one pint at a time",
+        insight: "30-40 year old's love to travel but cant due to life responsiblities.",
+        images: [
+            "/projects/tbs-cover.png",
+            "/projects/tbs-ooh.png",
+            "/projects/tbs-ooh1.png",
+            "/projects/beer-points.png",
+            "/projects/beer-passport.png",
+        ]
+            
     },
 }
