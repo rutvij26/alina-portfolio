@@ -23,6 +23,7 @@ const Work = () => {
 
     useEffect(() => {
         setData(dataPaneMap[activePane])
+        setExp("1")
     }, [activePane])
 
 
