@@ -4,18 +4,18 @@ import { IExperiences } from '../data/work'
 
 const Experience = ({ data, exp }: { data: IExperiences, exp: keyof IExperiences }) => {
     return (
-        <div className=" flex flex-col flex-[0.90] border-text  p-4">
+        <div className=" flex flex-col flex-[0.90] border-text p-2 md:p-4 overflow-scroll ">
             <div className="flex  justify-between">
                 <div className="flex">
-                    <span className='custom-text cursor-default text-2xl'>{data[exp].name}</span>
+                    <span className='custom-text cursor-default text-[10px] xs:text-sm md:text-2xl'>{data[exp].name}</span>
                 </div>
                 <div className="flex">
-                    <span className='custom-text cursor-default text-2xl'>{data[exp].title}</span>
+                    <span className='custom-text cursor-default text-[10px] xs:text-sm md:text-2xl'>{data[exp].title}</span>
                 </div>
             </div>
             <div className="flex flex-1 justify-between flex-col py-2 items-center">
                 <div className="py-2 flex justify-center">
-                    <span className='global-font custom-text text-2xl text-bold text-text  uppercase  cursor-default'>
+                    <span className='global-font custom-text text-[10px] xs:text-sm md:text-2xl text-bold text-text  uppercase  cursor-default'>
                         Brands
                     </span>
                 </div>
@@ -29,18 +29,18 @@ const Experience = ({ data, exp }: { data: IExperiences, exp: keyof IExperiences
                                     alt='brand'
                                     width={150}
                                     height={150}
-                                    className='rounded-full'
+                                    className='rounded-full h-8 w-8 sm:h-10 sm:w-10 md:h-20 md:w-20 object-scale-down'
                                 />
                             </div>
                         ))
                     }
                 </div>
-                <div className="flex min-h-[50%] max-w-[70%] p-2 border border-text mt-4">
+                <div className="min-h-[50%] md:max-w-[80%] md:p-2 md:border border-text mt-4">
                     <ul>
                         {
                             data[exp]?.points?.map((point) => (
                                 <li key={point}>
-                                    <span className="global-font text-text">
+                                    <span className="global-font text-text text-[10px] md:text-lg ">
                                         {" - "}{point}
                                     </span>
                                 </li>

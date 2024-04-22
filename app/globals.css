@@ -14,12 +14,12 @@
     @apply flex h-screen mt-20 lg:mt-20
   }
   .about-para {
-    @apply text-text text-sm md:text-sm xl:text-lg global-font text-justify
+    @apply text-text text-xs xl:text-lg global-font text-justify
     hover:text-hover hover:cursor-default
 
   }
   .about-div {
-    @apply border-text border-2 text-center md:max-w-[35%] mt-5 lg:mt-24 p-5 lg:p-10
+    @apply border-text border-2 text-center md:overflow-scroll md:max-h-[60%] md:max-w-[35%] mt-5 lg:mt-24 p-5 lg:p-10
     hover:border-hover hover:cursor-default
   }
   
