@@ -30,7 +30,7 @@ const Work = () => {
         const projects = document?.getElementById('project')
         if (projects) {
             projects.scrollTop = 0;
-        } 
+        }
         const experience = document.getElementById('experience')
         if (experience) {
             experience.scrollTop = 0;
@@ -38,7 +38,7 @@ const Work = () => {
     }, [exp])
 
     return (
-        <div className='global-section mt-0 md:mt-8 flex-col items-center justify-center'>
+        <div className='global-section mt-0 md:mt-8 flex-col h-screen items-center justify-center'>
             <TabBar activePane={activePane} setActivePane={setActivePane} />
             {/* Canvas */}
             <div className="flex h-[65vh] md:h-[70vh] w-[100vw] md:w-[80vw] border-2 border-text">

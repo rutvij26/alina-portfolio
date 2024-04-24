@@ -18,21 +18,21 @@ const SideItemClass = (exp: TDataKey, key: TDataKey) => `
 
 const Sidebar = ({ data, setExp, exp }: SideBarProps) => {
     return (
-        <div className="flex flex-[0.20] lg:flex-[0.20] flex-col  border-r-2 border-text">
+        <div className="flex flex-[0.20] lg:flex-[0.20] flex-col overflow-scroll  border-r-2 border-text">
             {/* Item */}
             {
                 Object.entries(data).map(([key, experience]) => (
                     <div key={experience.name} className={SideItemClass(exp, key)}>
                         <div
                             onClick={() => setExp(key)}
-                            className="flex flex-1  items-center justify-center">
-                            <div className="flex p-2">
+                            className="flex flex-1 items-center justify-center">
+                            <div className="flex">
                                 <Image
                                     src={experience.photo_url}
                                     width={80}
                                     height={80}
                                     alt='Alina Photo'
-                                    className="rounded-full object-cover h-10 w-10 md:h-20 md:w-20"
+                                    className="rounded-full object-cover h-10 w-10 lg:h-20 lg:w-20"
                                 />
                             </div>
                             {/* <div className="flex p-2">

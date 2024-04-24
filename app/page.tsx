@@ -10,13 +10,13 @@ export default function Home() {
         <NavBar />
       </div>
       <main className="flex scrollbar-hide h-screen flex-col items-center justify-between snap-y snap-mandatory overflow-y-scroll overflow-x-hidden">
-        <section id="Hero" className="flex flex-1 min-h-screen snap-start scrollbar-hide">
+        <section id="Hero" className="flex flex-1 min-h-fit snap-start scrollbar-hide">
           <Hero />
         </section>
-        <section id="about" className="flex flex-1 min-h-screen snap-center scrollbar-hide">
+        <section id="about" className="flex flex-1 min-h-fit snap-center scrollbar-hide">
           <About />
         </section>
-        <section id="work" className="flex flex-1 min-h-screen snap-end scrollbar-hide">
+        <section id="work" className="flex flex-1 min-h-fit snap-end scrollbar-hide">
           <Work />
         </section>
       </main>
