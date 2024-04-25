@@ -11,7 +11,6 @@ const tabStyleClass = (activePane: string, tabName: TTab) => `
         flex justify-center items-center min-h-[5vh] w-[50%] md:w-[20%] 
         border-x-2 border-t-2 border-text text-text 
         hover:cursor-pointer uppercase 
-        ${activePane === tabName ? 'bg-hover-200 text-black-900' : ''}
         `
 
 const Tab = ({
