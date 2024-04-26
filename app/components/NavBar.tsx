@@ -15,7 +15,7 @@ const NavBar = () => {
                         <div className="px-2" key={social.name}>
                             <SocialIcon
                                 url={social.url}
-                                bgColor={config?.theme?.colors?.text ?? "#000"}
+                                bgColor={(config?.theme?.colors as any)?.text ?? "#000"}
                             />
                         </div>
                     ))
