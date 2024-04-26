@@ -14,11 +14,11 @@ const Hero = () => {
                     className="rounded-full 
                     h-40 md:h-[15rem] 
                     w-40 md:w-[15rem] 
-                    object-scale-down"
+                    object-scale-down shadow-2xl"
                 />
             </div>
             <div className="xl:p-10">
-                <span className='global-font text-2xl md:text-3xl xl:text-4xl uppercase global-font text-text tracking-widest '>CopyWriter</span>
+                <span className='global-font text-2xl md:text-4xl uppercase global-font text-text tracking-widest '>CopyWriter</span>
             </div>
             <div className="flex max-h-fit flex-col justify-center items-center md:flex-row">
                 <Link className='pt-4' href="#about">

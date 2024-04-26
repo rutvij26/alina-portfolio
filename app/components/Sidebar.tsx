@@ -13,12 +13,15 @@ type TDataKey = keyof IExperiences | keyof IProjects
 
 
 const SideItemClass = (exp: TDataKey, key: TDataKey) => `
-    flex justify-center items-center flex-1 border-b-2 border-text hover:cursor-pointer ${exp === key ? 'bg-hover' : ''}
+    flex justify-center items-center flex-1 border-b-2 border-l-2
+    transition-all ease-in-ease-out
+    border-text hover:cursor-pointer 
+    ${exp === key ? 'border-r-8 border-r-hover' : ''}
 `
 
 const Sidebar = ({ data, setExp, exp }: SideBarProps) => {
     return (
-        <div className="flex flex-[0.20] lg:flex-[0.20] flex-col overflow-scroll  border-r-2 border-text">
+        <div className="flex flex-[0.20] scrollbar-hide lg:flex-[0.20] flex-col overflow-scroll  border-r-2 border-text">
             {/* Item */}
             {
                 Object.entries(data).map(([key, experience]) => (
@@ -32,7 +35,7 @@ const Sidebar = ({ data, setExp, exp }: SideBarProps) => {
                                     width={80}
                                     height={80}
                                     alt='Alina Photo'
-                                    className="rounded-full object-cover h-10 w-10 lg:h-20 lg:w-20"
+                                    className="rounded-full shadow-xl object-cover h-10 w-10 lg:h-20 lg:w-20"
                                 />
                             </div>
                             {/* <div className="flex p-2">

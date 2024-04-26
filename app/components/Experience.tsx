@@ -4,7 +4,7 @@ import { IExperiences } from '../data/work'
 
 const Experience = ({ data, exp }: { data: IExperiences, exp: keyof IExperiences }) => {
     return (
-        <div className=" flex flex-col flex-[0.90] border-text p-2 md:p-4 overflow-scroll ">
+        <div className=" flex flex-col scrollbar-hide flex-[0.90] border-text p-2 md:p-4 overflow-scroll ">
             <div className="flex  justify-between">
                 <div className="flex">
                     <span className='custom-text cursor-default text-[10px] xs:text-sm md:text-2xl'>{data[exp].name}</span>
@@ -29,13 +29,13 @@ const Experience = ({ data, exp }: { data: IExperiences, exp: keyof IExperiences
                                     alt='brand'
                                     width={150}
                                     height={150}
-                                    className='rounded-full h-8 w-8 sm:h-10 sm:w-10 md:h-20 md:w-20 object-scale-down'
+                                    className='rounded-full shadow-xl h-8 w-8 sm:h-10 sm:w-10 md:h-20 md:w-20 object-scale-down'
                                 />
                             </div>
                         ))
                     }
                 </div>
-                <div className="min-h-[50%] md:max-w-[80%] md:p-2 md:border border-text mt-4">
+                <div className="min-h-[50%] shadow-md scrollbar-hide md:max-w-[80%] md:p-2 md:border border-text mt-4">
                     <ul>
                         {
                             data[exp]?.points?.map((point) => (

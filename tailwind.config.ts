@@ -11,7 +11,7 @@ export const config: Config = {
       text: "#000",
       primary: "#ffee93",
       secondary: "#adf7b6",
-      background: "#463239",
+      background: "#F5F5DC",
       hover: "#c19770",
       'black-900': "#c19770",
       'sky_blue': {
@@ -77,7 +77,8 @@ export const config: Config = {
     }
   },
   plugins: [
-    require('tailwind-scrollbar-hide')
+    require('tailwind-scrollbar-hide'),
+    require('tailwind-scrollbar')
   ],
 
 };

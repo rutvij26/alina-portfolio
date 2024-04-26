@@ -5,7 +5,7 @@ import { IProjects } from '../data/projects'
 const Project = ({ data, project }: { data: IProjects, project: keyof IProjects }) => {
     return (
         <div className='flex flex-1'>
-            <div className="border-r-2 border-text flex  flex-col flex-[0.3] items-center justify-around md:p-4 overflow-scroll">
+            <div className="border-r-2 scrollbar-hide border-text flex  flex-col flex-[0.3] items-center justify-around md:p-4 overflow-scroll">
                 <div className="flex flex-col">
                     <span className='global-font italic xl:m-2 custom-text px-[0.3rem] md:px-2 text-xs md:text-sm lg:text-xl xl:text-2xl text-bold text-text  uppercase  cursor-default tracking-tighter'>
                         IDEA
@@ -23,7 +23,7 @@ const Project = ({ data, project }: { data: IProjects, project: keyof IProjects 
                     </span>
                 </div>
             </div>
-            <div id="project" className="flex-[0.7] justify-center md:snap-y md:snap-mandatory overflow-y-scroll">
+            <div id="project" className="flex-[0.7] scrollbar-thin scrollbar-thumb-hover scrollbar-track-background justify-center md:snap-y md:snap-mandatory overflow-y-scroll">
                 {data[project]?.images?.map((image, index) => (
                     <div
                         key={index}
