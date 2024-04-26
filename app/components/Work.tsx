@@ -17,7 +17,7 @@ type TDataKey = keyof IExperiences | keyof IProjects
 
 
 const Work = () => {
-    const [activePane, setActivePane] = useState<TTab>("Experience")
+    const [activePane, setActivePane] = useState<TTab>("Projects")
     const [data, setData] = useState<IExperiences | IProjects>(experiences)
     const [exp, setExp] = useState<TDataKey>("1")
 
