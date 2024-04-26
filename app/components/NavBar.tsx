@@ -1,6 +1,7 @@
 import React from 'react'
 import { SocialIcon } from 'react-social-icons'
 import { socials } from '../data/socials'
+import config from '@/tailwind.config'
 
 const NavBar = () => {
     return (
@@ -14,8 +15,7 @@ const NavBar = () => {
                         <div className="px-2" key={social.name}>
                             <SocialIcon
                                 url={social.url}
-                                bgColor='#463239'
-                                fgColor='#ffc09f'
+                                bgColor={(config?.theme?.colors as any)?.text ?? "#000"}
                             />
                         </div>
                     ))

@@ -8,11 +8,13 @@ interface ITabProps {
 }
 
 const tabStyleClass = (activePane: string, tabName: TTab) => `
-        flex justify-center items-center min-h-[5vh] w-[50%] md:w-[20%] 
-        border-x-2 border-t-2 border-text text-text 
+        flex justify-center items-center h-[5vh] 
+        text-text border-l-2 border-t-2 border-r-2
         hover:cursor-pointer uppercase 
-        ${activePane === tabName ? 'bg-hover-200 text-black-900' : ''}
+        transition-all ease-in-ease-out duration-300
+        ${activePane === tabName ? `z-100 h-100 w-[80%]` : "w-[20%]"} 
         `
+// ${activePane === tabName ? `border-b-4 border-b-hover` : ""} 
 
 const Tab = ({
     setActivePane,

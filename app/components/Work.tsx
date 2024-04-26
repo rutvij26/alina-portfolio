@@ -8,7 +8,7 @@ import Project from './Project'
 import Sidebar from './Sidebar'
 
 const dataPaneMap: Record<TTab, IExperiences | IProjects> = {
-    'Experiences': experiences,
+    'Experience': experiences,
     'Projects': projects
 }
 
@@ -17,7 +17,7 @@ type TDataKey = keyof IExperiences | keyof IProjects
 
 
 const Work = () => {
-    const [activePane, setActivePane] = useState<TTab>("Experiences")
+    const [activePane, setActivePane] = useState<TTab>("Experience")
     const [data, setData] = useState<IExperiences | IProjects>(experiences)
     const [exp, setExp] = useState<TDataKey>("1")
 
@@ -38,15 +38,15 @@ const Work = () => {
     }, [exp])
 
     return (
-        <div className='global-section mt-0 md:mt-8 flex-col h-screen items-center justify-center'>
+        <div className='global-section mt-0 md:mt-8 flex-col transition-all delay-150 ease-in-ease-out h-screen items-center justify-center'>
             <TabBar activePane={activePane} setActivePane={setActivePane} />
             {/* Canvas */}
-            <div className="flex h-[65vh] md:h-[70vh] w-[100vw] md:w-[80vw] border-2 border-text">
+            <div className="flex shadow-2xl h-[65vh] md:h-[70vh] w-[100vw] md:w-[80vw] border-r-2 border-y-2 border-text">
                 {/* SideBar */}
                 <Sidebar data={data} exp={exp} setExp={setExp} />
                 {/* Render Pane */}
                 {
-                    activePane === "Experiences" ?
+                    activePane === "Experience" ?
                         <Experience data={data} exp={exp} />
                         : <Project data={data} project={exp} />
                 }

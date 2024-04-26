@@ -1,11 +1,11 @@
 import React from 'react'
 import Tab from './Tab'
 
-export type TTab = 'Experiences' | 'Projects'
+export type TTab = 'Experience' | 'Projects'
 
 export const tabs: TTab[] = [
-    'Experiences',
-    'Projects'
+    'Projects',
+    'Experience',
 ]
 
 interface ITabBarProps {
@@ -18,9 +18,9 @@ const TabBar = ({
     activePane,
 }: ITabBarProps) => {
     return (
-        <div className="flex md:justify-left min-w-full md:w-[80vw]">
+        <div className="flex shadow-2xl  min-w-full ">
             {
-                tabs.map((tab) => (
+                tabs.map((tab, index) => (
                     <Tab key={tab} setActivePane={setActivePane} activePane={activePane} tabName={tab} />
                 ))
             }
