@@ -12,7 +12,7 @@ const tabStyleClass = (activePane: string, tabName: TTab) => `
         text-text border-l-2 border-t-2 border-r-2
         hover:cursor-pointer uppercase 
         transition-all ease-in-ease-out duration-300
-        ${activePane === tabName ? `z-100 h-100 w-[80%]` : "w-[20%]"} 
+        ${activePane === tabName ? `z-100 h-100 w-[80%]` : "w-[20%]"}
         `
 // ${activePane === tabName ? `border-b-4 border-b-hover` : ""} 
 
@@ -23,7 +23,7 @@ const Tab = ({
 }: ITabProps) => {
     return (
         <div onClick={() => setActivePane(tabName)} className={tabStyleClass(activePane, tabName)}>
-            <span className='global-font text-lg'>{tabName}</span>
+            <span className='global-font overflow-clip text-ellipsis text-md md:text-lg lg:text-xl'>{tabName}</span>
         </div>
     )
 }
